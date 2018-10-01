@@ -1,3 +1,4 @@
 language: python
 script:
+  -source env/bin/activate
   -pytest Test1.py
