@@ -34,12 +34,8 @@ def add_solution(solution=[]):
     print(result)
 
 def romove_results():
-    s = session()
-    print(s.query(Solution).count())
-    # for user in s.query(Solution):
-    #     print(user.solution)
+    s = session()    
     s.query(Solution).delete()
     s.commit()
-    print(s.query(Solution).count())
 
 
