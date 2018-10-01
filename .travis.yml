@@ -1,4 +1,8 @@
 language: python
+python:
+  -"3.7"
+install:
+  -pip install sqlalchemy
+  -pip install pytest
 script:
-  -source env/bin/activate
   -pytest Test1.py
